@@ -49,7 +49,7 @@ function Aleatorios() {
           <p>{pokemon.name}</p>
         </div>
       ))}
-      <button onClick={generar}>Generar</button>
+      <button onClick={generar}>Genrear</button>
     </section>
   );
 }
