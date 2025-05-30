@@ -7,16 +7,7 @@ function Aleatorios() {
   const [aleatorio, setAleatorio] = useState([])
   
   setTipoSeleccionado("All")
-  useEffect(() => {
-    if (data.length > 0) {
-      generar();
-    }
-  }, [data]);
-/*
-  useEffect(() => {
-    console.log("Actualizado:", listaCapturados);
-  }, [listaCapturados]);
-*/
+
   const navigate = useNavigate();
 
   const generar = () => {
@@ -49,7 +40,7 @@ function Aleatorios() {
           <p>{pokemon.name}</p>
         </div>
       ))}
-      <button onClick={generar}>Genrear</button>
+      <button onClick={generar}>Generar</button>
     </section>
   );
 }
