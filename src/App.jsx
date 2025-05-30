@@ -13,6 +13,7 @@ import Detalle from './componentes/detalle';
 import Login from './componentes/login';
 import Registro from './componentes/registro';
 import Administrador from './componentes/administrador';
+import Verificado from './componentes/verificado';
 
 function App() {
   const [usuario, setUsuario] = useState(null);
@@ -52,6 +53,7 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/registro" element={<Registro/>} />
           <Route path="/administrador" element={<Administrador/>} />
+          <Route path="/verificado" element={<Verificado />} />
         </Routes>
       </Router>
     </AppProvider>
